@@ -17,11 +17,7 @@
 		});
 		});
 		//2. 讓超連結失效
-		$(document).ready(function() {
-			$("a").click(function(event) {
-			event.preventDefault();
-			});
-		});
+
 		
 	</script>
 </head>
@@ -32,12 +28,9 @@
 <!--按下去，HelloWorld字樣會"消失"-->
 <div type="div">jquery Hello World !</div><p />
 ↑ 按下去，上面的Hello World會"消失"<p />
-<h2>2. 按下超連結，會"沒有反應"</h2><p />
-<!--原本按下超連結會回到本專案的首頁，但是現在因為event.preventDefault()，所以沒有反應-->
+<h2>2. 按下超連結，會詢問"是否離開此網頁?"</h2><p />
 回<a href="index.html">JS DOM HelloWorld首頁</a><p />
-<h2>3. 按下超連結，會詢問"是否離開此網頁?"</h2><p />
-回<a href="index.html">JS DOM HelloWorld首頁</a><p />
-<h2>4.form表單 jquery</h2><p />
+<h2>3.form表單 jquery</h2><p />
 		<!--以HTML做出來的表單區域-->
 		<h3>意見回饋</h3><p />
 			<form>
