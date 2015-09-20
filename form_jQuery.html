@@ -24,6 +24,15 @@
 		//});
 		
 		//3. 表單驗證
+		$('input[type=submit]').on('click',function(){
+			//按下"送出"，將表單送出後會啟動程式碼
+			//以下將判斷"確認送出資料"是否打勾
+			if(!$('#confirm').prop('checked')){
+				alert('訊息送出失敗：請將「確認送出資料」選項打勾');
+			}else{
+				alert('訊息傳送成功 ! ');
+			}
+		});
 	</script>
 </head>
 <body>
