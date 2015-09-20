@@ -17,11 +17,18 @@
 		});
 		});
 		//2. 詢問訪客是否離開網頁，如果按下"取消"就會阻止連出網頁
-		$('a').on('click',function(e) {
+		//$('a').on('click',function(e) {
 			//if參數，會跳出詢問視窗，!confirm表示"不同意"
-			if(!confirm('您即將離開此頁，要繼續嗎 ?')){
-			e.preventDefault();
-			}
+			//if(!confirm('您即將離開此頁，要繼續嗎 ?')){
+			//e.preventDefault();
+			//}
+		//});
+		
+		//W3C對造組
+		$(document).ready(function(){
+			$("a").click(function(event){
+			event.preventDefault();
+			});
 		});
 	</script>
 </head>
