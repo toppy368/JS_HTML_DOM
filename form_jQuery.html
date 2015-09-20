@@ -8,7 +8,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!--script區域，執行jQuery指令-->
 	<script type="text/javascript">
-		//2. 詢問訪客是否離開網頁，如果按下"取消"就會阻止連出網頁
+		//1-A. 詢問訪客是否離開網頁，如果按下"取消"就會阻止連出網頁
 		//$('a').on('click',function(e) {
 			//if參數，會跳出詢問視窗，!confirm表示"不同意"
 			//if(!confirm('您即將離開此頁，要繼續嗎 ?')){
@@ -16,7 +16,7 @@
 			//}
 		//});
 
-		//對造組3
+		//1-B.對造組3
 		$('a').on('click', function(e){
 		if(!confirm('您即將離開此頁，要繼續嗎？')){
 			e.preventDefault();
@@ -27,10 +27,10 @@
 <body>
 <!--網站標題-->
 <h1>jQuery DEMO</h1><p />
-<h2>2. 按下超連結，會詢問"是否離開此網頁?"</h2><p />
+<h2>1. 按下超連結，會詢問"是否離開此網頁?"</h2><p />
 <!--對造組-->
 <p>我已詳閱並接受<a href="http://zh.wikipedia.org/zh-tw/%E5%87%BA%E5%B8%AB%E8%A1%A8">前出師表</a>。 </p>
-<h2>3.form表單 jquery</h2><p />
+<h2>2.form表單 jquery</h2><p />
 		<!--以HTML做出來的表單區域-->
 		<h3>意見回饋</h3><p />
 			<form>
