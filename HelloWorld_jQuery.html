@@ -17,6 +17,12 @@
 		});
 		});
 		//2. 讓超連結失效
+		$(document).ready(function() {
+			$("a").click(function(event) {
+			event.preventDefault();
+			});
+		});
+		
 	</script>
 </head>
 <body>
