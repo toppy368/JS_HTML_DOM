@@ -9,8 +9,11 @@
 	<!--script區域，執行jQuery指令-->
 	<script type="text/javascript">
 		//1. 超連結失效，preventDefault()會阻止連出網頁
-
-		
+		$(document).ready(function(){
+			$("a").chick(function(event){
+				event.preventDefault();
+			});
+		});
 		//2. 表單驗證
 		$('input[type=submit]').on('click',function(){
 			//按下"送出"，將表單送出後會啟動程式碼
