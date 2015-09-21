@@ -9,12 +9,7 @@
 	<!--script區域，執行jQuery指令-->
 	<script type="text/javascript">
 		//1. 超連結失效，preventDefault()會阻止連出網頁
-		$('a').on('click',function(e) {
-			//if參數，會跳出詢問視窗，!confirm表示"不同意"
-			if(!confirm('您即將離開此頁，要繼續嗎 ?')){
-			e.preventDefault();
-			}
-		});
+
 		
 		//2. 表單驗證
 		$('input[type=submit]').on('click',function(){
