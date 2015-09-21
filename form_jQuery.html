@@ -8,8 +8,11 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!--script區域，執行jQuery指令-->
 	<script type="text/javascript">
-		//1. 超連結失效，preventDefault()會阻止連出網頁
+		//1. 超連結失效，第一組超連結會被preventDefault()指令，阻止超連結連出網頁
 		$(document).ready(function(){
+			//這裡的$("")為定向設定
+			//設定為$("a")表示會套用HTML所有的a標籤(超連結)
+			//設定為#a，表示只抓到id="a"這個項目的標籤
 			$("#a").click(function(event){
 				event.preventDefault();
 			});
@@ -29,7 +32,7 @@
 <body>
 <!--網站標題-->
 <h1>jQuery DEMO</h1><p />
-<h2>1. 超連結失效，jQuery會不讓這超連結連出去</h2><p />
+<h2>1. 超連結失效，第一組超連結會因為jQuery而阻止超連結連接</h2><p />
 <b>說明：</b>第一行超連結會<b>"失效"</b>，第二行可正常使用，請觀察兩組超連結的差別</p>
 <!--第一行超連結"失效"、第二行"正常"，請觀察兩組超連結的差別-->
 1. 回<a id="a" href="index.html">首頁</a></br>
