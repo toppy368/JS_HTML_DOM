@@ -8,7 +8,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!--script區域，執行jQuery指令-->
 	<script type="text/javascript">
-		//1. 詢問訪客是否離開網頁，如果按下"取消"就會阻止連出網頁
+		//1. 超連結失效，preventDefault()會阻止連出網頁
 		$('a').on('click',function(e) {
 			//if參數，會跳出詢問視窗，!confirm表示"不同意"
 			if(!confirm('您即將離開此頁，要繼續嗎 ?')){
@@ -31,7 +31,7 @@
 <body>
 <!--網站標題-->
 <h1>jQuery DEMO</h1><p />
-<h2>1. 按下超連結，會詢問"是否離開此網頁?"</h2><p />
+<h2>1. 超連結失效，jQuery會不讓這超連結連出去</h2><p />
 回<a href="index.html">首頁</a></p>
 <h2>2. 意見表表單驗證功能</h2><p />
 以下為網頁設計最常見的HTML表單，而接下來要DEMO的是利用jQuery來驗證表單<br />
